@@ -34,4 +34,4 @@
 
 <p>And that'll do it.  You can do alot with just this.  It has obvious benefits over just using raw SQL queries and database connector, which will become more apparent as the project grows larger.</p>
 
-_Next topic to cover: ObjectionJS._
+_Next topic to cover: @hapi/glue._
