@@ -10,27 +10,31 @@
 
 <p>Navigate to your working directory, and initialize your project:</p>
 
-```npm init -y```
+`npm init -y`
 
 <p>Then install your dependencies:</p>
 
-```npm install knexjs```
-```npm install mysql```
-```npm install dotenv```
+`npm install knexjs`
+`npm install mysql`
+`npm install dotenv`
 
 <p>Once installed you can start copying the files herein, minus the migrations and seeds files, those are files that create tables and seed them with pre-arranged data sets.</p>
 
 <p>Once the knexjs, .env, and knexfile.js documents have been created/written, we are ready to migrate our tables, and seed them with data.</p>
 
-```knex migrate:latest```
+`knex migrate:latest`
+
+<p>If you wish to create a new migration, enter into your terminal:</p>
+
+`knex migreate:make migration_file_name`
 
 <p>Then we'll need to create a seed file:</p>
 
-```knex seed:make seed_file_name```
+`knex seed:make seed_file_name`
 
 <p>Then we'll need to write in the data we want to seed it with (note that you can import this using require/module.exports syntax so you can have a lot of seed data)</p>
 
-```knex seed:run```
+`knex seed:run`
 
 <p>And that'll do it.  You can do alot with just this.  It has obvious benefits over just using raw SQL queries and database connector, which will become more apparent as the project grows larger.</p>
 
