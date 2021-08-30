@@ -56,7 +56,6 @@ app.delete('/', (req, res) => {
         })
 })
 
-
 app.listen(process.env.EXPRESS_PORT, (err) => {
     if (err) console.log(err)
     console.log(`Listening on port: ${process.env.EXPRESS_PORT}`)
