@@ -26,7 +26,7 @@
 
 <p>If you wish to create a new migration, enter into your terminal:</p>
 
-`knex migreate:make migration_file_name`
+`knex migrate:make migration_file_name`
 
 <p>Then we'll need to create a seed file:</p>
 
