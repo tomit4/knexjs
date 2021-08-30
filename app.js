@@ -1,6 +1,7 @@
 const express = require('express')
 const app = express()
 const knex = require('./db/knex')
+require('dotenv').config()
 
 app.use(express.urlencoded({
     extended: false
@@ -9,7 +10,6 @@ app.use(express.json())
 
 // GET request
 app.get('/', (req, res) => {
-
     // same as SELECT * FROM users;
     knex.select().from('users').then((results) => {
         res.send(results)
@@ -57,7 +57,7 @@ app.delete('/', (req, res) => {
 })
 
 
-app.listen(3000, (err) => {
+app.listen(process.env.EXPRESS_PORT, (err) => {
     if (err) console.log(err)
-    console.log('Listening on port: 3000')
+    console.log(`Listening on port: ${process.env.EXPRESS_PORT}`)
 })
