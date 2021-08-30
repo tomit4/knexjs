@@ -18,6 +18,10 @@
 `npm install mysql`
 `npm install dotenv`
 
+<p>You'll then need to initialize your knex project via the knex CLI tool.  It can be invoked like so:</p>
+
+`knex init`
+
 <p>Once installed you can start copying the files herein, minus the migrations and seeds files, those are files that create tables and seed them with pre-arranged data sets.</p>
 
 <p>Once the knexjs, .env, and knexfile.js documents have been created/written, we are ready to migrate our tables, and seed them with data.</p>
